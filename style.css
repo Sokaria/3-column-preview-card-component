@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    margin-bottom: 2rem;
+}
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-bottom: 2rem;
+}
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.65);
+    line-height: 20px;
+    font-size: 13px;
+    margin-bottom: 4rem;
+    word-spacing: 1.5px;
+}
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+    width:130px;
+    height: 40px;
+    font-size: 13px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    border: 2px solid transparent;
+    transition: .5s ease all;
+}
+section .row .item:first-child a{
+    color:hsl(31, 77%, 52%)  ;
+}
+section .row .item:nth-child(2) a{
+    color:hsl(184, 100%, 22%) ;
+}
+section .row .item:last-child a{
+    color:hsl(179, 100%, 13%) ;
+}
+section .row .item:first-child a:hover ,section .row .item:nth-child(2) a:hover ,section .row .item:last-child a:hover{
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+section{
+    width: 800px;
+    height: 450px;
+    border-radius: 10px;
+    margin: 90px auto 0 auto;
+    overflow: hidden;
+}
+section .row{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    height: 100%;
+}
+section .row .item:first-child{
+    background-color:hsl(31, 77%, 52%) ;
+    padding: 3rem 3rem 3rem 3rem;
+}
+section .row .item:nth-child(2){
+    background-color: hsl(184, 100%, 22%);
+    padding: 3rem 2rem 3rem 3rem;
+}
+section .row .item:last-child{
+    background-color:hsl(179, 100%, 13%) ;
+    padding: 3rem 1.8rem 3rem 3rem;
+}
+/**********************************************/
+@media (max-width:375px) {
+    body{
+        display: flex;
+        align-items: center;
+        height: 220vh;
+    }
+    section{
+        width: 90%;
+        height: 195vh;
+        border-radius: 5px;
+        margin: 0px auto 0 auto;
+    }
+    section .row{
+        grid-template-columns: 1fr;
+    }
+    a{
+        width:140px;
+        height: 50px;
+        font-size: 13px;
+    }
+    img{
+        margin-bottom: 2rem;
+    }
+    h2{
+        font-size: 40px;
+        margin-bottom: 2rem;
+    }
+    p{
+        font-size: 15px;
+        margin-bottom: 2rem;
+    }
+    section .row .item:nth-child(2){
+        padding: 3rem 2.5rem 3rem 3rem;
+    }
+}
